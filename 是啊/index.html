@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直连云个人网盘</title>
+    <script src="./request.js"></script>
+
+    <link rel="stylesheet" href="./js/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        p {
+            margin-bottom: 0;
+        }
+        
+        *,
+         ::after,
+         ::before {
+            box-sizing: content-box
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .lists {
+            height: 60px;
+            padding: 10px;
+            border-bottom: #e0e0e0 1px solid;
+        }
+        
+        .name {
+            width: 250px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 30px;
+            line-height: 30px;
+            color: #212121;
+            padding-left: 15px;
+        }
+        
+        .info {
+            color: #9e9e9e;
+            padding-left: 15px;
+            font-size: 13px;
+        }
+        
+        .del {
+            position: relative;
+            /* left: 85%; */
+            left: 100%;
+            transform: translate(-120%, 0);
+            bottom: 35px;
+        }
+        
+        header {
+            height: 50px;
+            background-color: #212121;
+            line-height: 50px;
+        }
+        
+        header p {
+            color: #fff;
+            margin-left: 25px;
+        }
+        
+        header a {
+            color: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 25px;
+        }
+        
+        .btn {
+            padding: 0.215rem 0.35rem;
+        }
+        
+        .wai {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>直连云个人网盘</p>
+        <a href="./upload.html">上传</a>
+    </header>
+    <!-- <div class="alert alert-success alert-dismissible fade show wai">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>成功!</strong> 指定操作成功提示信息。
+    </div> -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">温馨提示</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    确定要把ID=[<span id="del"></span>] 移入回收站吗？
+
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="del()">移入</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="f"></div>
+    <script>
+        window.onload = function list() {
+            let url = "api/index/lists",
+                params = {
+                    order: "inc"
+                }
+            ajax(url, "post", params, function(res) {
+                    var arr = jQuery.parseJSON(res)
+                    if (arr.code == 1) {
+                        console.log(arr.data)
+                        arr.data.forEach(element => {
+                            var sizes = element.file_size / 1024 / 1024 >= 1 ? (element.file_size / 1024 / 1024).toFixed(2) + 'Mb' : (element.file_size / 1024).toFixed(2) + 'Kb'
+                            var str = ''
+                            str += '<div class="lists">'
+                            str += '<p class="name">' + element.file_name + '</p>'
+                            str += '<p class="info">' +
+                                element.file_count + ' ~ ' + sizes + ' ~ ' + element.create_time + '</p>'
+                            str += '<button type="button"  data-toggle="modal" data-target="#myModal" class="del btn btn-danger" onclick="clicks(' + element.id + ')" >删除</button>'
+                            str += '</div>'
+                            $('.f').prepend(str)
+                        });
+
+                    } else {
+                        console.log(arr.msg)
+                    }
+                },
+                function(res) {
+                    console.log(res);
+                })
+        }
+
+        function del() {
+            var id = $('#del').text();
+            console.log(id)
+            let url = "api/index/deles",
+                params = {
+                    id: id,
+                    status: false
+                }
+            ajax(url, "post", params, function(res) {
+                var arr = jQuery.parseJSON(res)
+                if (arr.code) {
+                    alert(arr.msg)
+                    window.location.reload()
+                } else {
+                    alert(arr.msg)
+                }
+            }, function(res) {
+                console.log(res);
+            })
+        }
+
+        function clicks(id) {
+            $('#del').text(id)
+        }
+    </script>
+</body>
+
+</html>
