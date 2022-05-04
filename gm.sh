@@ -53,22 +53,12 @@ echo "安装完成"
 function xypjq {
 clear
 echo "自行安装"
-wget -q --user-agent="" http://js.xiazai163.com/apk9/lpinstaller_v9.9.6_itmop.com.apk
-sleep 1
-pm install -r ./lpinstaller_v9.9.6_itmop.com.apk
-rm -rf ./lpinstaller_v9.9.6_itmop.com.apk
-sleep 20
-am start -n ru.aaaaaacf.installer/.MainActivity
+
 }
 function Magisk {
 clear
 echo "等待安装....."
-wget gm.xhov.top/mx.sh & sh mx.sh
-sleep 1
-wget -O /data/local/tmp/app-debug.apk -q --user-agent="" http://js.xiazai163.com/apk9/huaweimianjumokuai_v24.1_itmop.com.apk
-sleep 5
-pm install -r /data/local/tmp/app-debug.apk
-rm -rf /data/local/tmp/app-debug.apk
+
 }
 function menu {
 clear 
