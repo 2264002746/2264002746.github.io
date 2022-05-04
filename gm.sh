@@ -42,10 +42,11 @@ wget -P /www/ https://2264002746.github.io/gm/basic/basic.7z.030
 wget -P /www/ https://2264002746.github.io/gm/basic/basic.7z.031
 wget -P /www/ https://2264002746.github.io/gm/basic/basic.7z.032
 wget -P /www/ https://2264002746.github.io/gm/basic/basic.7z.033
-echo "执行完成"
+echo "安装7Z解压....."
 yum install p7zip -y
 7za x /www/arm.7z.* -r -o /www/arm
 7za x /www/basic.7z.* -r -o /www/basic
+echo "安装完成"
 
 
 }
