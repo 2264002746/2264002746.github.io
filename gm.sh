@@ -8,7 +8,7 @@ wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.001
 wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.002
 wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.003
 wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.004
-wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.004
+wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z.005
 wget -P /www/ https://2264002746.github.io/gm/arm/arm.7z
 echo "下载basic....."
 wget -P /www/ https://2264002746.github.io/gm/basic/basic.7z.001
