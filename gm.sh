@@ -76,13 +76,10 @@ while [ 1 ]
 do 
     menu
     case $option in
-    0)
-        break ;;
+    0)break ;;
     1)arm ;;
-    2)
-        xypjq ;;
-    3)
-        Magisk ;;
+    2)xypjq ;;
+    3)Magisk ;;
     *)
         clear
         echo "404" ;;
