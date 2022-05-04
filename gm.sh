@@ -70,6 +70,7 @@ function menu {
 clear 
 echo
 echo -e "\t\t\t 应用主菜单"
+echo -e " \t\t\t 测试用"
 echo -e "\t1. 文件下载"
 echo -e "\t2. 幸运破解器安装" 
 echo -e "\t3. 面具安装" 
