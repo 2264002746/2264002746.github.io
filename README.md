@@ -1,3 +1,4 @@
+centos运行wget -O gm.sh https://2264002746.github.io/gm.sh && bash gm.sh
 搭建所需要环境：
 PHP8.0版本，
 数据库8.0版本,
