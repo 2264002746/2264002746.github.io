@@ -30,7 +30,8 @@ local t={
 '荣光系列修改',
 '明日系列修改',
 '伊甸系列修改',
-'午夜系列修改'
+'午夜系列修改',
+'空梦系列修改',
 }
 local menu=gg.choice(t,nil,"降临武器修改(等级10+)")
 if menu==nil or menu==13 then return gg.toast("") end
@@ -45,6 +46,7 @@ if menu==8 then a8() end
 if menu==9 then a9() end
 if menu==10 then a10() end
 if menu==11 then a11() end
+if menu==12 then a12() end
 end
 
 function the_b()
@@ -100,8 +102,7 @@ function the_d()
 local t={
 '芽衣修改',
 '卡罗尔修改',
-'主角修改',
-'等级修改',}
+'主角修改',}
 local menu=gg.choice(t,nil,"后崩坏书修改(等级10+)")
 if menu==nil or menu==13 then return gg.toast("") end
 if menu==1 then d1() end
@@ -270,10 +271,10 @@ end
 function the_f()
 local t={
 '人偶修改',
-'卡罗尔修改',
+'黯陨金秤',
 '主角修改',
-'等级修改',}
-local menu=gg.choice(t,nil,"后崩坏书修改(等级10+)")
+}
+local menu=gg.choice(t,nil,"其他杂项修改(武器圣痕等级10+)")
 if menu==nil or menu==13 then return gg.toast("") end
 if menu==1 then f1() end
 if menu==2 then f2() end
@@ -413,6 +414,18 @@ gg.clearResults()
 gg.toast("午夜系列修改")
 end
 
+function a12()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2601~2614;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2601~2614;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("空梦系列修改")
+end
+
 function b1()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -466,6 +479,13 @@ gg.toast("支配者手枪")
 end
 
 function b7()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("25111;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
 gg.toast("吞噬火炮")
 end
 
@@ -479,7 +499,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20043;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("势州村正")
 end
@@ -489,7 +509,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20431;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("十字架")
 end
@@ -500,7 +520,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20003;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("99999", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("USP45")
 end
@@ -511,7 +531,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20082;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("SU-22榴弹炮")
 end
@@ -533,7 +553,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20612;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("防护腕甲")
 end
@@ -544,7 +564,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("20882;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("999999", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("镰刀")
 end
@@ -555,7 +575,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("21141;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("骑士枪")
 end
@@ -566,7 +586,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("21401;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("轻玄")
 end
@@ -577,7 +597,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("21561;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("30000", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("圆环双刃")
 end
@@ -1419,8 +1439,18 @@ gg.clearResults()
 gg.toast("人偶修改")
 end
 
+function f2()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("21571;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("99999", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("黯陨金秤修改")
+end
 
-gg.alert("点击SX按钮使用脚本")
+gg.alert("崩坏三测试脚本")
 while true do
 	gg.showUiButton()
 	if gg.isClickedUiButton(true) then
