@@ -1452,7 +1452,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("21571;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("999999", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("黯陨金秤修改")
 end
@@ -1468,7 +1468,7 @@ gg.clearResults()
 gg.toast("黑铁修改")
 end
 
-gg.alert("测试脚本")
+gg.alert("注:用跨虚拟机修改防封;AD拦截log")
 while true do
 	gg.showUiButton()
 	if gg.isClickedUiButton(true) then
