@@ -271,8 +271,8 @@ end
 function the_f()
 local t={
 '人偶修改',
-'黯陨金秤',
-'主角修改',
+'黯陨金秤修改',
+'黑铁修改',
 }
 local menu=gg.choice(t,nil,"其他杂项修改(武器圣痕等级10+)")
 if menu==nil or menu==13 then return gg.toast("") end
@@ -285,8 +285,8 @@ end
 function a1()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("101~114;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("101~114;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("101~114;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("101~114;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -297,8 +297,8 @@ end
 function a2()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("201~214;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("201~214;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("201~214;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("201~214;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -309,8 +309,8 @@ end
 function a3()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("301~314;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("301~314;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("301~314;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("301~314;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -321,8 +321,8 @@ end
 function a4()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("401~422;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("401~422;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("401~422;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("401~422;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -333,8 +333,8 @@ end
 function a5()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("501~514;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("501~514;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("501~514;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("501~514;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -345,8 +345,8 @@ end
 function a6()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("601~614;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("601~614;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("601~614;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("601~614;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -357,8 +357,8 @@ end
 function a7()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("701~714;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("701~714;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("701~714;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("701~714;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -369,8 +369,8 @@ end
 function a8()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("801~814;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("801~814;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("801~814;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("801~814;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -381,8 +381,8 @@ end
 function a9()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("901~914;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("901~914;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("901~914;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("901~914;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -393,8 +393,8 @@ end
 function a10()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("2801~2814;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("2801~2814;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("2801~2814;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2801~2814;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -405,8 +405,8 @@ end
 function a11()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("2401~2414;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("2401~2414;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("2401~2414;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2401~2414;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -417,8 +417,8 @@ end
 function a12()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("2601~2614;1~5;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("2601~2614;10~80::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("2601~2614;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2601~2614;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~80", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -429,7 +429,7 @@ end
 function b1()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25074;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("25074;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -440,7 +440,7 @@ end
 function b2()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25154;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("25154;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -451,7 +451,7 @@ end
 function b3()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25131;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("25131;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -460,13 +460,20 @@ gg.toast('天父大剑')
 end
 
 function b4()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("25051;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
 gg.toast('暴食节刀')
 end
 
 function b5()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25091;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("25091;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -481,7 +488,7 @@ end
 function b7()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25111;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("25111;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("9999", gg.TYPE_DWORD)
@@ -1442,15 +1449,26 @@ end
 function f2()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("21571;10~50::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("21571;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("99999", gg.TYPE_DWORD)
+gg.editAll("999999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("黯陨金秤修改")
 end
 
-gg.alert("崩坏三测试脚本")
+function f3()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("20923;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("黑铁修改")
+end
+
+gg.alert("测试脚本")
 while true do
 	gg.showUiButton()
 	if gg.isClickedUiButton(true) then
