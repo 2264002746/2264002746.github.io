@@ -8,7 +8,7 @@ local t={
 '其他修改',
 '神之键修改',
 }
-local menu=gg.choice(t,nil,"崩坏三测试脚本")
+local menu=gg.choice(t,nil,"跨虚拟机修改;用AD拦截log")
 if menu==nil or menu==13 then return gg.toast("") end
 if menu==1 then the_a() end
 if menu==2 then the_b() end
@@ -193,7 +193,7 @@ local t={
 '黄金吼姆王勋章',
 
 '光耀吼姆王勋章'}
-local menu=gg.choice(t,nil,"女武神修改(等级10+)")
+local menu=gg.choice(t,nil,"全勋章修改")
 if menu==nil or menu==13 then return gg.toast("") end
 if menu==1 then e1() end
 if menu==2 then e2() end
