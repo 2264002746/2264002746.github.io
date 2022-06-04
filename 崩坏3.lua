@@ -8,7 +8,7 @@ local t={
 '其他修改',
 '神之键修改',
 }
-local menu=gg.choice(t,nil,"仅供测试使用")
+local menu=gg.choice(t,nil,"云脚本,不定时更新。")
 if menu==nil or menu==13 then return gg.toast("") end
 if menu==1 then the_a() end
 if menu==2 then the_b() end
@@ -33,9 +33,11 @@ local t={
 '伊甸系列修改',
 '午夜系列修改',
 '空梦系列修改',
+'绘世系列修改',
+'断罪系列修改',
 }
 local menu=gg.choice(t,nil,"女武神修改(等级10+)")
-if menu==nil or menu==13 then return gg.toast("") end
+if menu==nil or menu==15 then return gg.toast("") end
 if menu==1 then a1() end
 if menu==2 then a2() end
 if menu==3 then a3() end
@@ -48,6 +50,8 @@ if menu==9 then a9() end
 if menu==10 then a10() end
 if menu==11 then a11() end
 if menu==12 then a12() end
+if menu==13 then a13() end
+if menu==14 then a14() end
 end
 
 function the_b()
@@ -124,7 +128,6 @@ local t={
 '痛苦伯爵勋章',
 '无限公爵勋章',
 '圣焰的审判者',
-
 '一周年纪念勋章',
 '吼姆勋章',
 '荣耀骑士勋章',
@@ -137,7 +140,6 @@ local t={
 '猎杀之章',
 '烟花游园勋章',
 '虎吼生风勋章',
-
 '雪地狙击勋章',
 'Zwei勋章',
 '高阶舰会启蒙师',
@@ -150,7 +152,6 @@ local t={
 '创世诗',
 '逆熵起源勋章',
 '燃夜之炬勋章',
-
 '芽衣吼美勋章',
 'MVP勋章',
 '涤罪书',
@@ -163,7 +164,6 @@ local t={
 '崩坏3三周年纪念勋章',
 '冬之公主勋章',
 '亚空的征服者',
-
 '布狼牙游戏套装',
 '新的启程',
 '亚空的毁灭者',
@@ -176,7 +176,6 @@ local t={
 '崩坏3四周年纪念勋章',
 '崩坏3五周年纪念勋章',
 '登录纪念勋章',
-
 '崩坏3二周年纪念勋章',
 '逐火者的残响',
 '逐火者的勋业',
@@ -189,7 +188,6 @@ local t={
 '封印之剑勋章',
 '守护誓约勋章',
 '黄金吼姆王勋章',
-
 '光耀吼姆王勋章'}
 local menu=gg.choice(t,nil,"全勋章修改")
 if menu==nil or menu==13 then return gg.toast("") end
@@ -271,7 +269,7 @@ end
 function the_f()
 local t={
 '人偶修改',
-'黯陨金秤修改',
+'布洛妮娅勋章修改',
 '黑铁修改',
 }
 local menu=gg.choice(t,nil,"其他杂项修改(武器圣痕等级10+)")
@@ -303,7 +301,7 @@ gg.searchNumber("101~114;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("101~114;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("琪亚娜修改")
 end
@@ -316,7 +314,7 @@ gg.searchNumber("201~214;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("201~214;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("芽衣系列修改")
 end
@@ -329,7 +327,7 @@ gg.searchNumber("301~314;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("301~314;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('战车系列修改')
 end
@@ -342,7 +340,7 @@ gg.searchNumber("401~422;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("401~422;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("姬子系列修改")
 end
@@ -355,7 +353,7 @@ gg.searchNumber("501~514;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("501~514;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("誓约系列修改")
 end
@@ -368,7 +366,7 @@ gg.searchNumber("601~614;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("601~614;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("迅羽系列修改")
 end
@@ -381,7 +379,7 @@ gg.searchNumber("701~714;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("701~714;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("影铁系列修改")
 end
@@ -394,7 +392,7 @@ gg.searchNumber("801~814;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("801~814;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("荣光系列修改")
 end
@@ -407,7 +405,7 @@ gg.searchNumber("901~914;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0,
 gg.refineNumber("901~914;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("明日系列修改")
 end
@@ -420,7 +418,7 @@ gg.searchNumber("2801~2814;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 
 gg.refineNumber("2801~2814;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("伊甸系列修改")
 end
@@ -433,10 +431,11 @@ gg.searchNumber("2401~2414;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 
 gg.refineNumber("2401~2414;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("午夜系列修改")
 end
+
 
 function a12()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
@@ -446,9 +445,35 @@ gg.searchNumber("2601~2614;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 
 gg.refineNumber("2601~2614;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("空梦系列修改")
+end
+
+function a13()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setVisible(false)
+gg.searchNumber("2901~2914;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2901~2914;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("绘世之卷系列修改")
+end
+
+function a14()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setVisible(false)
+gg.searchNumber("2101~2114;1~5;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2101~2114;10~88::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("断罪皇女系列修改")
 end
 
 function b1()
@@ -506,7 +531,7 @@ gg.setVisible(false)
 gg.searchNumber("25091;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("10~65", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("65", gg.TYPE_DWORD)
+gg.editAll("8888", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("潜伏者加农炮")
 end
@@ -536,6 +561,14 @@ gg.toast("吞噬火炮")
 end
 
 function b8()
+local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setVisible(false)
+gg.searchNumber("25011;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("10~65", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("65", gg.TYPE_DWORD)
+gg.clearResults()
 gg.toast("飓风左轮")
 end
 
@@ -665,7 +698,7 @@ gg.setVisible(false)
 gg.searchNumber("1203;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("后崩坏书(芽衣)")
 end
@@ -677,7 +710,7 @@ gg.setVisible(false)
 gg.searchNumber("1304;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("后崩坏书(卡罗尔)")
 end
@@ -689,7 +722,7 @@ gg.setVisible(false)
 gg.searchNumber("1411;5~30::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("5~30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("88", gg.TYPE_DWORD)
+gg.editAll("9999", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("后崩坏书(主角)")
 end
@@ -701,7 +734,7 @@ gg.setVisible(false)
 gg.searchNumber("27;0;19;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("27;0;19;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("琪亚娜准许勋章")
 end
@@ -713,7 +746,7 @@ gg.setVisible(false)
 gg.searchNumber("51;0;27::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("51;0;27", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("实习舰长勋章")
 end
@@ -725,7 +758,7 @@ gg.setVisible(false)
 gg.searchNumber("57;0;51::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("57;0;51", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("禁区通行证")
 end
@@ -737,7 +770,7 @@ gg.setVisible(false)
 gg.searchNumber("69;0;49::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("69;0;49", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("沉睡银狼勋章")
 end
@@ -749,7 +782,7 @@ gg.setVisible(false)
 gg.searchNumber("90;0;81::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("90;0;81", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("梦魇挑战勋章")
 end
@@ -761,7 +794,7 @@ gg.setVisible(false)
 gg.searchNumber("47;0;34;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("47;0;34;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("芽衣准许勋章")
 end
@@ -773,7 +806,7 @@ gg.setVisible(false)
 gg.searchNumber("78;0;57;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("78;0;57;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("红莲侯爵勋章")
 end
@@ -785,7 +818,7 @@ gg.setVisible(false)
 gg.searchNumber("45;0;65;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("45;0;65;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("'布洛妮娅准许勋章")
 end
@@ -797,7 +830,7 @@ gg.setVisible(false)
 gg.searchNumber("28;0;6;26;6::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("28;0;6;26;6", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("寂灭荣爵勋章")
 end
@@ -809,7 +842,7 @@ gg.setVisible(false)
 gg.searchNumber("73;0;53;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("73;0;53;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("痛苦伯爵勋章")
 end
@@ -821,7 +854,7 @@ gg.setVisible(false)
 gg.searchNumber("55;6;26;7::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("55;6;26;7", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("无限公爵勋章")
 end
@@ -833,7 +866,7 @@ gg.setVisible(false)
 gg.searchNumber("76;0;27;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("76;0;27;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("圣焰的审判者")
 end
@@ -845,7 +878,7 @@ gg.setVisible(false)
 gg.searchNumber("31;0;32;1::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("31;0;32;1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("一周年勋章")
 end
@@ -857,7 +890,7 @@ gg.setVisible(false)
 gg.searchNumber("73;0;25;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("73;0;25;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("吼姆勋章")
 end
@@ -869,7 +902,7 @@ gg.setVisible(false)
 gg.searchNumber("67;0;49;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("67;0;49;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("荣耀骑士勋章")
 end
@@ -881,7 +914,7 @@ gg.setVisible(false)
 gg.searchNumber("48;1;0;22::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("48;1;0;22", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("42号勋章")
 end
@@ -893,7 +926,7 @@ gg.setVisible(false)
 gg.searchNumber("55;0;81;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("55;0;81;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("轮回猎杀者")
 end
@@ -905,7 +938,7 @@ gg.setVisible(false)
 gg.searchNumber("59;0;86;6::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("59;0;86;6", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("轮回解放者")
 end
@@ -917,7 +950,7 @@ gg.setVisible(false)
 gg.searchNumber("73;0;53;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("73;0;53;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("神圣骑士勋章")
 end
@@ -929,7 +962,7 @@ gg.setVisible(false)
 gg.searchNumber("78;0;57;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("78;0;57;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("职高骑士勋章")
 end
@@ -941,7 +974,7 @@ gg.setVisible(false)
 gg.searchNumber("83;0;59::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("83;0;59", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("雪地战车勋章")
 end
@@ -953,7 +986,7 @@ gg.setVisible(false)
 gg.searchNumber("80;0;77;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("80;0;77;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("猎杀之章")
 end
@@ -965,7 +998,7 @@ gg.setVisible(false)
 gg.searchNumber("46;0;31::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("46;0;31", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("烟花游园勋章")
 end
@@ -977,7 +1010,7 @@ gg.setVisible(false)
 gg.searchNumber("51;1;0;31::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("51;1;0;31", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("虎吼生风勋章")
 end
@@ -989,7 +1022,7 @@ gg.setVisible(false)
 gg.searchNumber("67;0;65;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("67;0;65;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("雪地狙击勋章")
 end
@@ -1001,7 +1034,7 @@ gg.setVisible(false)
 gg.searchNumber("76;0;54::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("76;0;54", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Zwei勋章")
 end
@@ -1013,7 +1046,7 @@ gg.setVisible(false)
 gg.searchNumber("60;0;70;6::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("60;0;70;6", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("高阶舰会启蒙师")
 end
@@ -1025,7 +1058,7 @@ gg.setVisible(false)
 gg.searchNumber("83;0;45;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("83;0;45;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Eins勋章")
 end
@@ -1037,7 +1070,7 @@ gg.setVisible(false)
 gg.searchNumber("67;0;69;8::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("67;0;69;8", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("伟大的领航者")
 end
@@ -1049,7 +1082,7 @@ gg.setVisible(false)
 gg.searchNumber("34;2;0;46::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("34;2;0;46", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("金鼠吼姆勋章")
 end
@@ -1061,7 +1094,7 @@ gg.setVisible(false)
 gg.searchNumber("53;0;57::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("53;0;57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("少女与海")
 end
@@ -1073,7 +1106,7 @@ gg.setVisible(false)
 gg.searchNumber("62;0;75::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("62;0;75", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("影像达人")
 end
@@ -1085,7 +1118,7 @@ gg.setVisible(false)
 gg.searchNumber("78;0;48::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("78;0;48", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("默示录")
 end
@@ -1097,7 +1130,7 @@ gg.setVisible(false)
 gg.searchNumber("93;0;48::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("93;0;48", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("创世诗")
 end
@@ -1109,7 +1142,7 @@ gg.setVisible(false)
 gg.searchNumber("52;0;37;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("52;0;37;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("逆熵起源勋章")
 end
@@ -1121,7 +1154,7 @@ gg.setVisible(false)
 gg.searchNumber("29;2;0;44::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("29;2;0;44", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("燃夜之炬勋章")
 end
@@ -1133,7 +1166,7 @@ gg.setVisible(false)
 gg.searchNumber("24;2;0;44::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("24;2;0;44", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("芽衣吼美勋章")
 end
@@ -1145,7 +1178,7 @@ gg.setVisible(false)
 gg.searchNumber("104;8;79;1::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("104;8;79;1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("MVP勋章")
 end
@@ -1157,7 +1190,7 @@ gg.setVisible(false)
 gg.searchNumber("80;1;0;50::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("80;1;0;50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("涤罪书")
 end
@@ -1169,7 +1202,7 @@ gg.setVisible(false)
 gg.searchNumber("48;0;22;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("48;0;22;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("异世行记勋章")
 end
@@ -1181,7 +1214,7 @@ gg.setVisible(false)
 gg.searchNumber("41;0;47::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("41;0;47", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("地铁纪念勋章")
 end
@@ -1193,7 +1226,7 @@ gg.setVisible(false)
 gg.searchNumber("56;0;61;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("56;0;61;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("审判者之翼")
 end
@@ -1205,7 +1238,7 @@ gg.setVisible(false)
 gg.searchNumber("51;0;46;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("51;0;46;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("逆天者")
 end
@@ -1217,7 +1250,7 @@ gg.setVisible(false)
 gg.searchNumber("42;0;36::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("42;0;36", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("德丽莎纪念币")
 end
@@ -1229,7 +1262,7 @@ gg.setVisible(false)
 gg.searchNumber("109;8;24;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("109;8;24;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("辉煌MVP勋章")
 end
@@ -1241,7 +1274,7 @@ gg.setVisible(false)
 gg.searchNumber("94;0;25::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("94;0;25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("崩坏三周年纪念勋章")
 end
@@ -1253,7 +1286,7 @@ gg.setVisible(false)
 gg.searchNumber("55;0;38::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("55;0;38", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("冬之公主勋章")
 end
@@ -1265,7 +1298,7 @@ gg.setVisible(false)
 gg.searchNumber("80;0;66;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("80;0;66;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("亚空的征服者")
 end
@@ -1277,7 +1310,7 @@ gg.setVisible(false)
 gg.searchNumber("72;0;37::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("72;0;37", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("布狼牙游戏套装")
 end
@@ -1289,7 +1322,7 @@ gg.setVisible(false)
 gg.searchNumber("50;0;49::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("50;0;49", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("新的启程")
 end
@@ -1301,7 +1334,7 @@ gg.setVisible(false)
 gg.searchNumber("85;0;49;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("85;0;49;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("亚空的毁灭者")
 end
@@ -1313,7 +1346,7 @@ gg.setVisible(false)
 gg.searchNumber("68;0;23::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("68;0;23", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("栾星之徽")
 end
@@ -1325,7 +1358,7 @@ gg.setVisible(false)
 gg.searchNumber("82;0;62;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("82;0;62;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("破晓之章")
 end
@@ -1337,7 +1370,7 @@ gg.setVisible(false)
 gg.searchNumber("72;0;30::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("72;0;30", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("幽焰蔷薇勋章")
 end
@@ -1349,7 +1382,7 @@ gg.setVisible(false)
 gg.searchNumber("83;0;59::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("83;0;59", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("烈焰蔷薇勋章")
 end
@@ -1361,7 +1394,7 @@ gg.setVisible(false)
 gg.searchNumber("80;0;66;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("80;0;66;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("血裔之证")
 end
@@ -1373,7 +1406,7 @@ gg.setVisible(false)
 gg.searchNumber("48;1;0;60::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("48;1;0;60", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("牛气吼姆勋章")
 end
@@ -1385,7 +1418,7 @@ gg.setVisible(false)
 gg.searchNumber("60;0;38;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("60;0;38;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("崩坏三4周年纪念勋章")
 end
@@ -1397,7 +1430,7 @@ gg.setVisible(false)
 gg.searchNumber("51;0;38;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("51;0;38;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("崩坏三5周年纪念勋章")
 end
@@ -1409,7 +1442,7 @@ gg.setVisible(false)
 gg.searchNumber("51;0;20::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("51;0;20", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("登录纪念勋章")
 end
@@ -1421,7 +1454,7 @@ gg.setVisible(false)
 gg.searchNumber("69;0;31;2::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("69;0;31;2", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("崩坏三2周年纪念勋章")
 end
@@ -1433,7 +1466,7 @@ gg.setVisible(false)
 gg.searchNumber("72;0;55;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("72;0;55;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("逐火者的残响")
 end
@@ -1445,7 +1478,7 @@ gg.setVisible(false)
 gg.searchNumber("78;0;60;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("78;0;60;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("逐火者的勋业")
 end
@@ -1456,7 +1489,7 @@ gg.setVisible(false)
 gg.searchNumber("58;0;41;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("58;0;41;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("超越者之证")
 end
@@ -1467,7 +1500,7 @@ gg.setVisible(false)
 gg.searchNumber("83;0;64;6::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("83;0;64;6", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("逐火者的辉华")
 end
@@ -1478,7 +1511,7 @@ gg.setVisible(false)
 gg.searchNumber("43;0;46;1::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("43;0;46;1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("祝福的铃声")
 end
@@ -1489,7 +1522,7 @@ gg.setVisible(false)
 gg.searchNumber("62;0;47;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("62;0;47;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("黑铁之证")
 end
@@ -1500,7 +1533,7 @@ gg.setVisible(false)
 gg.searchNumber("54;0;38;3::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("54;0;38;3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("挑战者之证")
 end
@@ -1511,7 +1544,7 @@ gg.setVisible(false)
 gg.searchNumber("78;0;57;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("78;0;57;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("诅咒之剑勋章")
 end
@@ -1522,7 +1555,7 @@ gg.setVisible(false)
 gg.searchNumber("55;0;61;8::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("55;0;61;8", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("封印之剑勋章")
 end
@@ -1533,7 +1566,7 @@ gg.setVisible(false)
 gg.searchNumber("41;0;89::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("41;0;89", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("守护誓约勋章")
 end
@@ -1544,7 +1577,7 @@ gg.setVisible(false)
 gg.searchNumber("73;0;70;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("73;0;70;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("黄金吼姆王勋章")
 end
@@ -1555,7 +1588,7 @@ gg.setVisible(false)
 gg.searchNumber("75;0;71;5::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("75;0;71;5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("500", gg.TYPE_DWORD)
+gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("光耀吼姆王勋章")
 end
@@ -1571,30 +1604,18 @@ gg.editAll("88", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("人偶修改")
 end
-
 function f2()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.setVisible(false)
-gg.searchNumber("21571;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("10~65", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("45;0;65;4::17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("45;0;65;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("65", gg.TYPE_DWORD)
+gg.editAll("500000", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("黯陨金秤修改")
+gg.toast("'布洛妮娅准许勋章(防御)")
 end
 
-function f3()
-local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.setVisible(false)
-gg.searchNumber("20923;10~65::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("10~65", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("65", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("黑铁修改")
-end
 function g1()
 local targetPkg = 'com.miHoYo.enterprise.NGHSoD'
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -1607,6 +1628,8 @@ gg.clearResults()
 gg.toast("伊甸之心修改")
 end
 
+
+
 gg.alert("用跨虚拟机修改器修改,用AD抓log拦截")
 while true do
 	gg.showUiButton()
@@ -1615,4 +1638,3 @@ while true do
 		the_choice()
 	end
 end
-
