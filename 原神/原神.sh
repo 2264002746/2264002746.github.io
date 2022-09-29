@@ -21,10 +21,10 @@
  wget  https://2264002746.github.io/原神/gm.zip.011
  wget  https://2264002746.github.io/原神/gm.zip.012
  wget  https://2264002746.github.io/原神/gm.zip.013
- ​echo​ ​"​安装ZIP.....​" 
- ​pkg install zip -y 
+ ​echo​ ​"​安装软件.....​" 
+ ​pkg install zip -y
+ pkg install openjdk-17 -y
  echo "解压文件"
- termux-setup-storage
  cat ./gm.zip.* > gm.zip
  unzip ./gm.zip
  rm -rf ./gm.zip.*
