@@ -1,6 +1,4 @@
- 
- #!/bin/bash 
- pkg install wget -y
+pkg install wget -y
  wget https://2264002746.github.io/原神/gm.zip.001
  wget https://2264002746.github.io/原神/gm.zip.002
  wget https://2264002746.github.io/原神/gm.zip.003
