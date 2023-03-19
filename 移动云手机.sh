@@ -1,12 +1,16 @@
 #!/bin/bash
 function root {
 clear
-/system/bin/cph_su & cp -r /system/bin/cph_su /system/bin/su
+/system/bin/cph_su
+sleep 3
+cp -r /system/bin/cph_su /system/bin/su
 echo "开启"
 }
 function root1 {
 clear
-/system/bin/cph_su & rm -rf /system/bin/su
+/system/bin/cph_su
+sleep 3
+rm -rf /system/bin/su
 echo "关闭"
 
 }
